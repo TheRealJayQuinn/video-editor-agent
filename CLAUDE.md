@@ -15,8 +15,11 @@ gitignored `MASTER_CONTEXT.md`. The two never mix.
 
 1. Read **MASTER_CONTEXT.md** if it exists — brand palette/fonts/voice, default ratio,
    caption preferences, reviewer workflow prefs, hard rules, the **projects directory**, and
-   accumulated learnings. If it does not exist, copy `MASTER_CONTEXT.template.md` to
-   `MASTER_CONTEXT.md` and offer to populate the empty fields.
+   accumulated learnings. If it does not exist, first search the user's Google Drive
+   (when connected) for a file titled `MASTER_CONTEXT.md` and download it to the repo
+   root; only if none exists, copy `MASTER_CONTEXT.template.md` to `MASTER_CONTEXT.md`
+   and offer to populate the empty fields. In a cloud session, after changing
+   `MASTER_CONTEXT.md`, update the Drive copy so the change survives the container.
 2. Route **any video-edit request** (edit this footage, recut this, "edit this like
    <reference reel>", split these hooks, add hooks to this body, a revision on a delivered
    edit) through the **`video-edit-pipeline`** skill in `.claude/skills/`. It orchestrates
